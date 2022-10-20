@@ -1,0 +1,15 @@
+@import url(https://fonts.bunny.net/css?family=swanky-and-moo-moo:400);
+
+body {
+  background-color: hsl(200, 20%, 20%);
+  color: hsl(60, 10%, 95%);
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Swanky and Moo Moo', handwriting;
+}
+
+.name {
+  color: tomato;
+}
