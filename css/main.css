@@ -1,8 +1,41 @@
-@import url(https://fonts.bunny.net/css?family=swanky-and-moo-moo:400);
+@import url(https://fonts.bunny.net/css?family=fira-mono:400,700|nunito:400,400i,700,700i|swanky-and-moo-moo:400);
+
+:root {
+  --bg-100: hsl(258, 24%, 13%);
+  --bg-200: hsl(220, 32%, 16%);
+  --bg-300: hsl(200, 20%, 20%);
+
+  --fg-300: hsl(60, 10%, 95%);
+
+  --accent-200: hsl(352, 82%, 58%);
+}
 
 body {
-  background-color: hsl(200, 20%, 20%);
-  color: hsl(60, 10%, 95%);
+  background-color: var(--bg-200);
+  color: var(--fg-300);
+  margin: 0;
+}
+
+nav {
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-100);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  font-family: 'Nunito', 'Gill Sans', Calibri, sans-serif;
+  font-size: 1.2em;
+}
+
+.icon {
+  width: 20px;
+  background-color: var(--fg-300);
+}
+
+.welcome {
+  padding-left: 3rem;
 }
 
 h1 {
@@ -11,5 +44,24 @@ h1 {
 }
 
 .name {
-  color: tomato;
+  color: var(--accent-200);
+}
+
+#greeting {
+  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+}
+
+#greeting::after {
+  content: "|";
+  opacity: 0.8;
+}
+
+#greeting.blink::after {
+  animation: blink 1s cubic-bezier(0.075, 0.82, 0.165, 1) 10ms infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
