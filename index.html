@@ -6,27 +6,44 @@
     <script src="https://unpkg.com/alpinejs" defer></script>
     <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="shortcut icon" href="assets/profile.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/931f823517.js" crossorigin="anonymous"></script>
     <title>Jorge Terence</title>
   </head>
   <body>
     <nav>
+      <a href="index.html" class="mention">@AmbiguousPotato</a>
       <ul>
         <li>About</li>
         <li>Projects</li>
         <li>Experience</li>
         <li>Arcade</li>
-        
+      </ul>
+    </nav>
+    <main>
+      <div class="welcome">
+        <h1>Hi! My name is <span class="name">Jorge Terence!</span></h1>
+        <h2 id="greeting" class="blink"></h2>
+      </div>
+      <div class="about">
+        <h2>About me</h2>
+        <div>
+          <img src="assets/oc.png" alt="my wonderful OC &lt;3" class="oc">
+        </div>
+        <p>
+          My name is Jorge Terence and I'm a software developer graduating on 2023 at Etec Jorge Street High School.
+          I study on São Caetano do Sul, SP 🇧🇷 and have been tinkering with programming projects since 2020.
+        </p>
+      </div>
+    </main>
+    <aside class="links">
+      <ul>
         <li><a href="https://github.com/JorgeTerence"><i class="fa-brands fa-github-alt" title="github profile"></i></a></li>
         <li><a href="https://www.linkedin.com/in/jorge-terence-santana-545831197"><i class="fa-brands fa-linkedin-in" title="LinkedIn profile"></i></a></li>
         <li><a href="mailto:jorge.terence@outlook.com"><i class="fa-solid fa-envelope" title="e-mail"></i></a></li>
         <li><i class="fa-solid fa-city" title="neocities projects"></i></li>
       </ul>
-    </nav>
-    <div class="welcome">
-      <h1>Hi! My name is <span class="name">Jorge Terence!</span></h1>
-      <h2 id="greeting" class="blink"></h2>
-    </div>
+    </aside>
   </body>
 </html>

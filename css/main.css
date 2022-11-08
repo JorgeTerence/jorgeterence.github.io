@@ -8,6 +8,7 @@
   --fg-300: hsl(60, 10%, 95%);
 
   --accent-200: hsl(352, 82%, 58%);
+  --accent-300: hsl(352, 73%, 64%);
 }
 
 body {
@@ -16,26 +17,8 @@ body {
   margin: 0;
 }
 
-nav {
-  padding: 0.5rem 1rem;
-  background-color: var(--bg-100);
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-  font-family: 'Nunito', 'Gill Sans', Calibri, sans-serif;
-  font-size: 1.2em;
-}
-
-.icon {
-  width: 20px;
-  background-color: var(--fg-300);
-}
-
 .welcome {
-  padding-left: 3rem;
+  padding: 3rem;
 }
 
 h1 {
@@ -64,4 +47,19 @@ h1 {
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.about {
+  padding: 2rem 3rem;
+  background-color: var(--fg-300);
+  color: var(--bg-100);
+  font-family: "Nunito", "Gill Sans", Calibri, sans-serif;
+}
+
+.about h2 {
+  font-size: 1.8em;
+}
+
+.about p {
+  font-size: 1.15em;
 }

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const steps = [
     "I'm a high school student...",
     "I love cats and programming ᓚᘏᗢ",
-    "Leave a star ⭐",
+    "Leave a star ",
     "¯\\_(ツ)_/¯",
   ];
 
